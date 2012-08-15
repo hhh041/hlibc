@@ -1,7 +1,7 @@
 /**
  *	buf.h -- thread safety producer and consumer model	
  *
- *	@author huodonghai	<huodonghai@intra.nsfocus.com
+ *	@author tony	<tunghai.huo@gmail.com>
  *
  */ 
 #include "buf.h"

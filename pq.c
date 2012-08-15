@@ -1,7 +1,7 @@
 /**
  *	pq.c -- thread safety producer and consumer priority queue	
  *
- *	@author huodonghai	<huodonghai@intra.nsfocus.com>
+ *	@author tony	<tunghai.huo@gmail.com>
  *
  */
 
