@@ -120,13 +120,13 @@ int buf_uninit(buf_handle * hand)
 	if(hand->magic != sizeof(buf_handle))
 	  return -1;
 
-//	if(hand->mutex != 0)
+	if(((struct buf_handle*)hand)->mutex != 0)
 	  sem_destroy(&hand->mutex);
 
-//	if(hand->empty != 0)
+	if(((struct buf_handle*)hand)->empty != 0)
 	  sem_destroy(&hand->empty);
 
-//	if(hand->full != 0)
+	if(((struct buf_handle*)hand)->full != 0)
 	  sem_destroy(&hand->full);
 
 	if(hand != NULL)
