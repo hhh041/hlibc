@@ -57,8 +57,8 @@ int buf_put(buf_handle * hand,void * entry)
 	if(hand->magic != sizeof(buf_handle))
 	  return -1;
 
-//	if(sizeof(entry) != hand->entry_size)
-//	  return -1;
+	if(sizeof(entry) != ((struct buf_handle *)hand)->entry_size)
+	  return -1;
 
 	sem_wait(&hand->empty);
 	sem_wait(&hand->mutex);
